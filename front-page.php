@@ -12,7 +12,7 @@
                     <div class="about-txt"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/top/svg/about_ttl.svg" alt="ABOUT"></div>
                 </div>
                 <div class="cont">
-                    <p class="main_txt_en en-r">Design <br class="sp">Philosophy</p>
+                    <p class="main_txt_en en-r">Design <br class="sp">Philosophysd</p>
                     <p class="main_txt_jp">ゼロから創るデザイン</p>
                     <p class="sub_txt">この考えを軸にこの世にまだ無い新しいカタチを提供します。<br>設計・建築デザインは勿論、ロゴデザインやグラフィックデザイン、動画編集などあらゆる分野で対応可能です。<br>予算や時間を最大限に考慮し、依頼主様の納得が得られるまでがsu su su designの全体図であると考えます。</p>
                     <div class="more_container">
