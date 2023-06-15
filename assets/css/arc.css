@@ -1,0 +1,167 @@
+.fv-up {
+    padding: 120px 0 0;
+    border-bottom: solid 1px #303030;
+}
+.title-up {
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.title-up h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+.title-up h1 span {
+  font-size: 1.4rem;
+  display: block;
+}
+.breadcrumb {
+  padding-bottom: 10px;
+}
+.breadcrumb ul {
+  align-items: center;
+}
+.breadcrumb ul li {
+  margin-right: 30px;
+  position: relative;
+}
+.breadcrumb ul li::before {
+  content: "";
+  width: 16px;
+  height: 1px;
+  background-color: #303030;
+  position: absolute;
+  left: -23px;
+  top: 50%;
+}
+.breadcrumb ul li:first-of-type:before {
+  display: none;
+}
+.breadcrumb ul li a,
+.breadcrumb ul li span {
+  font-size: 1.4rem;
+  color: #303030;
+}
+.breadcrumb ul li a {
+  opacity: .6;
+  transition: .3s;
+}
+
+.breadcrumb ul li a:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:640px) {
+  .fv-up {
+    padding: 60px 0 0;
+  }
+}
+  
+.categories {
+  padding: 60px 0;
+  border-bottom: solid 1px #303030;
+}
+.categories ul {
+  justify-content: center;
+}
+.categories ul li {
+  margin: 0 60px;
+}
+.categories ul li .cat_tab {
+ color: #303030;
+ font-size: 1.4rem;
+ line-height: 1;
+ border: solid 1px #303030;
+ padding: 4px 7px;
+ transition: .2s;
+}
+.categories ul li.current .cat_tab {
+  color: #fff;
+  background-color: #303030;
+}
+.categories ul li .cat_tab:hover {
+  color: #fff;
+  background-color: #303030;
+}
+@media screen and (max-width:640px) {
+  .categories {
+    padding: 20px 0;
+  }
+  .categories ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories ul li {
+    margin: 5px 0;
+  }
+}
+
+.projects {
+}
+.projects .prj_cont {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects .prj_cont .prj_item {
+  width: calc(50% - 10px);
+  height: 350px;
+  border: solid 1px #303030;
+  margin-top: 20px;
+}
+.projects .prj_cont .prj_item a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  color: #fff;
+}
+.projects .prj_cont .prj_item a .imagearea {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.projects .prj_cont .prj_item a .imagearea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .2s;
+}
+.projects .prj_cont .prj_item a:hover .imagearea img {
+  transform: scale(1.1);
+}
+.projects .prj_cont .prj_item a .textarea {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+.projects .prj_cont .prj_item a .textarea .metaflex .date {
+  font-size: 1rem;
+  line-height: 1;
+}
+.projects .prj_cont .prj_item a .textarea .metaflex .cat {
+  font-size: 1rem;
+  margin-left: 20px;
+  position: relative;
+  line-height: 1;
+}
+.projects .prj_cont .prj_item a .textarea .metaflex .cat::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+@media screen and (max-width:640px) {
+  .projects .prj_cont .prj_item {
+    width: 100%;
+    height: 200px;
+  }
+  .projects .prj_cont .prj_item a .textarea {
+    padding: 10px;
+  }
+}

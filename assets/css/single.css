@@ -1,0 +1,132 @@
+.fv-up {
+    padding: 120px 0 0;
+    border-bottom: solid 1px #303030;
+}
+.title-up {
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.title-up h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+.title-up h1 span {
+  font-size: 1.4rem;
+  display: block;
+}
+.breadcrumb {
+  padding-bottom: 10px;
+}
+.breadcrumb ul {
+  align-items: center;
+}
+.breadcrumb ul li {
+  margin-right: 30px;
+  position: relative;
+}
+.breadcrumb ul li::before {
+  content: "";
+  width: 16px;
+  height: 1px;
+  background-color: #303030;
+  position: absolute;
+  left: -23px;
+  top: 50%;
+}
+.breadcrumb ul li:first-of-type:before {
+  display: none;
+}
+.breadcrumb ul li a,
+.breadcrumb ul li span {
+  font-size: 1.4rem;
+  color: #303030;
+}
+.breadcrumb ul li a {
+  opacity: .6;
+  transition: .3s;
+}
+
+.breadcrumb ul li a:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:640px) {
+  .fv-up {
+    padding: 60px 0 0;
+  }
+}
+
+.type-project .thumbnail {
+  width: 100%;
+  height: 95vh;
+  border-bottom: solid 1px #303030;
+}
+.type-project .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.type-project .exp_sec {
+  width: 100%;
+  height: 80vh;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+.type-project .exp_sec .textarea {
+  width: 400px;
+  height: 100%;
+  padding: 25px;
+  border-top: solid 1px #303030;
+  border-right: solid 1px #303030;
+  border-bottom: solid 1px #303030;
+}
+.type-project .exp_sec .image01 {
+  width: calc(100% - 425px );
+  height: 100%;
+}
+.type-project .exp_sec .image01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top: solid 1px #303030;
+  border-left: solid 1px #303030;
+  border-bottom: solid 1px #303030;
+}
+.type-project .image {
+  width: calc(100% - 50px);
+  height: 100%;
+  margin: 25px auto 0;
+  object-fit: cover;
+  object-position: center;
+}
+.type-project .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: solid 1px #303030;
+}
+
+@media screen and (max-width:640px) {
+  .type-project .exp_sec {
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .type-project .exp_sec .textarea {
+    width: 100%;
+    height: auto;
+    border-right: none;
+  }
+  .type-project .exp_sec .image01 {
+      width: 100%;
+      margin-top: 25px;
+  }
+  .type-project .image {
+    width: 100%;
+    height: fit-content;
+    margin: 25px auto 0;
+    border: solid 1px #303030;
+  }
+}

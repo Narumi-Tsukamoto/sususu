@@ -1,0 +1,301 @@
+#wrap {
+    overflow: hidden;
+}
+#canvas-container {
+    width: 100%;
+    height: 85svh;
+}
+.about {
+    border-bottom: solid 1px #000;
+}
+.about .layout .ttl_area {
+    padding: 0 50px;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.about .layout .ttl_area .about-txt {
+    width: 100%;
+}
+.about .layout .cont {
+    padding: 140px 0 140px 80px;
+}
+.about .layout .cont .main_txt_en {
+    font-size: 3.0rem;
+    letter-spacing: .1em;
+}
+.about .layout .cont .main_txt_jp {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 25px 0 30px;
+    letter-spacing: .1em;
+}
+.about .layout .cont .sub_txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+.more_container {
+    display: block;
+    width: fit-content;
+    margin: 30px 0 0 auto;
+}
+.more_container a {
+    font-size: 1.8rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.more_container .arrow {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+.more_container .arrow img {
+    width: 100%;
+}
+
+@media screen and (max-width:640px) {
+    .about .layout {
+        position: relative;
+    }
+    .about .layout .ttl_area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: none;
+        border-right: none;
+        height: auto;
+        width: 100px;
+        align-items: flex-start;
+        padding: 0px;
+    }
+    .about .layout .ttl_area .about-txt {
+        margin-top: 40px;
+        opacity: .2;
+    }
+    .about .layout .cont {
+        padding: 80px 0 80px 40px;
+    }
+    .about .layout .cont .main_txt_en {
+        line-height: 1.5;
+    }
+}
+.works {
+    margin-top: 20px;
+    border-top: solid 1px #000;
+    background-color: #303030;
+    padding: 120px 0;
+}
+.works .ttl_area {
+    padding: 20px 0;
+}
+.works .ttl_area .works-ttl {
+    width: 100vw;
+    overflow: hidden;
+}
+.works .ttl_area .works-ttl .works-ttl_cont {
+    height: 100px;
+    width: fit-content;
+    margin: 0 10px;
+}
+.works .ttl_area .works-ttl .works-ttl_cont img {
+    height: 100%;
+    width: auto;
+}
+.slide_area {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+.slide_area > div {
+    width: 900px;
+    height: 600px;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+.slide_area > div a img {
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+.slide_area .follow {
+    position: absolute;
+    top: 0;
+}
+.slide_area #works-main-slider {
+    margin: 0 auto;
+}
+.slide_area #works-sub-slider01 {
+    right: calc(50% + 550px);
+}
+.slide_area #works-sub-slider02 {
+    left: calc(50% + 550px);
+}
+.slide_area #works-txt-slider {
+    width: 900px;
+    height: fit-content;
+    padding: 20px;
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_area #works-txt-slider a {
+    width: 900px;
+    color: #fff;
+}
+.slide_area #works-txt-slider a .category {
+    font-size: .8rem;
+}
+.slide_area #works-txt-slider a .title {
+    font-size: 1.2rem;
+}
+.slide_area #works-txt-slider a .date {
+    font-size: .8rem;
+}
+.prev_arrow_cont,
+.next_arrow_cont {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.prev_arrow_cont {
+    right: calc(50% + 450px);
+}
+.next_arrow_cont {
+    left: calc(50% + 450px);
+}
+.prev_arrow_cont img,
+.next_arrow_cont img {
+    width: 30px;
+    height: auto;
+    fill: #fff;
+}
+.works .more_container {
+    display: block;
+    width: fit-content;
+    margin: 30px 30px 0 auto;
+}
+.works .more_container a {
+    color: #fff;
+}
+@media screen and (max-width:640px) {
+    .works {
+        padding: 40px 0;
+    }
+    .works .ttl_area .works-ttl .works-ttl_cont {
+        height: auto;
+        width: 95vw;
+        margin: 0 10px;
+    }
+    .slide_area {
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    .slide_area > div {
+        width: 100vw;
+        height: 500px;
+        border: none;
+    }
+    .slide_area > div a img {
+        width: 100vw;
+        height: 500px;
+    }
+    .slide_area .follow {
+        position: relative;
+    }
+    .slide_area #works-main-slider {
+        margin: 0 auto;
+        border: none;
+    }
+    .slide_area #works-sub-slider01 {
+        top: unset;
+        right: unset;
+        width: 50vw;
+        height: 130px;
+        order: 1;
+        border-top: solid 1px #fff;
+    }
+    .slide_area #works-sub-slider02 {
+        top: unset;
+        left: unset;
+        width: 50vw;
+        height: 130px;
+        order: 2;
+        border-top: solid 1px #fff;
+        border-left: solid 1px #fff;
+    }
+    .slide_area #works-sub-slider01 a img,
+    .slide_area #works-sub-slider02 a img {
+        height: 130px;
+    }
+    .slide_area #works-txt-slider {
+        position: absolute;
+        width: 100vw;
+        top: 396px;
+        bottom: unset;
+    }
+    .prev_arrow_cont,
+    .next_arrow_cont {
+        width: 50vw;
+        height: 130px;
+        top: unset;
+        bottom: -130px;
+        z-index: 5;
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+        background-color: rgba(0,0,0,.7);
+    }
+    .prev_arrow_cont {
+        left: 0;
+        right: unset;
+    }
+    .next_arrow_cont {
+        left: unset;
+        right: 0;
+        border-left: solid 1px #fff;
+    }
+    .prev_arrow_cont img,
+    .next_arrow_cont img {
+        width: 30px;
+        height: auto;
+        fill: #fff;
+    }
+}
+.contact {
+    padding: 0 0 120px;
+  background-color: #303030;
+}
+.contact .contact-btn {
+    border: solid 1px #fff;
+    background-color: #303030;
+}
+.contact .contact-btn::after {
+  background: #fff;
+}
+.contact .contact-btn:hover {
+  color: #fff;
+}
+.contact .contact-btn .contact-btn_cont span {
+    color: #fff;
+  }
+  .contact .contact-btn:hover .contact-btn_cont span {
+    color: #303030;
+  }
+
+  @media screen and (max-width:640px) {
+    .contact {
+        padding: 0 0 40px;
+      background-color: #303030;
+    }
+  }
